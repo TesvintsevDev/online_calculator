@@ -1,0 +1,92 @@
+body {
+  background-color: #c8f8fa;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+  width: 288px;
+  height: 450px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  margin: 50px auto;
+}
+
+.panel {
+  height: 100px;
+  padding: 20px;
+  text-align: right;
+  position: relative;
+}
+
+#result {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 34px;
+  width: 248px;
+  overflow-x: auto;
+}
+
+#keyboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.key {
+  width: 70px;
+  height: 60px;
+  background-color: #1f2326;
+  color: #f8fcff;
+  border: 1px solid #2d3134;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  /* не даём выделять кнопки */
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.key:hover {
+  opacity: 90%;
+}
+
+.key_long {
+  width: 142px;
+}
+
+.key_purple {
+  background-color: #5f4ab6;
+  border: 1px solid #6a56c0;
+}
+
+.key_yellow {
+  background-color: #ffc207;
+  border: 1px solid #ffc207;
+  color: #1f2326;
+}
+
+/* scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #dbdbdb #f0f0f0;
+}
+
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+  border-radius: 3px;
+}
